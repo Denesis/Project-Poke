@@ -1,0 +1,185 @@
+body {
+  background: linear-gradient(to bottom, #a31621 20%, #141115 25%, #fcf7f8 30%);
+  /* background-image: url(./image/pokemon-minimalism-wallpaper.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+}
+
+#logo > img {
+  width: 400px;
+  height: 120px;
+}
+
+#search {
+  display: flex;
+  justify-content: center;
+}
+
+#search-input {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  height: 25px;
+  width: 250px;
+  background-color: rgba(247, 244, 239, 0.647);
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+}
+
+#pokedex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.selectors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.selectors__item {
+  width: 60px;
+  height: 15px;
+  justify-content: center;
+  padding: 10px;
+  border: 2px solid black;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+}
+
+#webPoke {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 270px);
+  justify-content: space-evenly;
+  gap: 15px;
+}
+
+.container__card {
+  /* background-color: white;
+  border-radius: 12px;
+  margin: 8px 25px 8px 8px;
+  display: flex;
+  width: 200px;
+  height: 100px;
+  align-items: center;
+  position: relative; */
+
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+  border-radius: 12px;
+  /* margin: 8px 25px 8px 8px; */
+  display: grid;
+  /* width: 200px;
+  height: 100px; */
+  align-items: center;
+  box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 30%);
+  padding: 10px;
+}
+
+.description__card {
+  width: 100%;
+}
+
+.img {
+  width: 100%;
+  text-align: center;
+}
+
+.img > img {
+  width: 100px;
+  height: 100px;
+  transform: translate(30px, -20px) scale(1.4);
+}
+
+.types {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.types__item {
+  border-radius: 5px;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.types__item-fire {
+  background-color: rgba(240, 128, 48, 0.4);
+}
+
+.types__item-grass {
+  background-color: rgba(120, 200, 80, 0.4);
+}
+
+.types__item-water {
+  background-color: rgba(24, 139, 224, 0.4);
+}
+
+.types__item-flying {
+  background-color: rgba(168, 144, 240, 0.4);
+}
+
+.types__item-electric {
+  background-color: rgba(248, 208, 48, 0.4);
+}
+
+.types__item-ground {
+  background-color: rgba(224, 192, 104, 0.4);
+}
+
+.types__item-rock {
+  background-color: rgba(184, 160, 56, 0.4);
+}
+
+.types__item-fairy {
+  background-color: rgba(238, 153, 172, 0.4);
+}
+
+.types__item-bug {
+  background-color: rgba(168, 184, 32, 0.4);
+}
+
+.types__item-poison {
+  background-color: rgba(160, 64, 160, 0.4);
+}
+
+.types__item-dragon {
+  background-color: rgba(112, 56, 248, 0.4);
+}
+
+.types__item-psychic {
+  background-color: rgba(248, 88, 136, 0.4);
+}
+
+.types__item-fighting {
+  background-color: rgba(192, 48, 40, 0.4);
+}
+
+.types__item-normal {
+  background-color: rgba(168, 168, 120, 0.4);
+}
+
+.types__item-ghost {
+  background-color: rgba(112, 88, 152, 0.4);
+}
+
+.types__item-steel {
+  background-color: rgba(105, 105, 105, 0.4);
+}
+
+.types__item-dark {
+  background-color: rgba(112, 88, 72, 0.4);
+}
+
+.types__item-ice {
+  background-color: rgba(152, 216, 216, 0.4);
+}
