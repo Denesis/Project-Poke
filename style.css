@@ -50,23 +50,24 @@ body {
   border-radius: 12px;
   width: 60px;
   height: 15px;
-  background-color: #ed474a;
+  color: #fcf7f8;
+  background-color: #141115;
   justify-content: center;
   padding: 10px;
   cursor: pointer;
   display: flex;
   box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 30%);
-  margin: 10px;
+  margin: 4px;
 }
 
 #webPoke {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 270px);
+  grid-template-columns: repeat(auto-fit, 210px);
   justify-content: space-evenly;
   gap: 30px;
 }
 
-.container__card {
+.basic__card {
   grid-template-columns: 1fr 1fr;
   background-color: white;
   border-radius: 12px;
@@ -104,74 +105,96 @@ body {
   font-size: 11px;
 }
 
-.types__item-fire {
+.all:hover {
+  background: linear-gradient(to right, #a31621 25%, #141115 30%, #fcf7f8 35%);
+  color: #141115;
+}
+.types__item-fire,
+.selectors__item-fire:hover {
   background-color: rgba(240, 128, 48, 0.4);
 }
 
-.types__item-grass {
+.types__item-grass,
+.selectors__item-grass:hover {
   background-color: rgba(120, 200, 80, 0.4);
 }
 
-.types__item-water {
+.types__item-water,
+.selectors__item-water:hover {
   background-color: rgba(24, 139, 224, 0.4);
 }
 
-.types__item-flying {
+.types__item-flying,
+.selectors__item-flying:hover {
   background-color: rgba(168, 144, 240, 0.4);
 }
 
-.types__item-electric {
+.types__item-electric,
+.selectors__item-electric:hover {
   background-color: rgba(248, 208, 48, 0.4);
 }
 
-.types__item-ground {
+.types__item-ground,
+.selectors__item-ground:hover {
   background-color: rgba(224, 192, 104, 0.4);
 }
 
-.types__item-rock {
+.types__item-rock,
+.selectors__item-rock:hover {
   background-color: rgba(184, 160, 56, 0.4);
 }
 
-.types__item-fairy {
+.types__item-fairy,
+.selectors__item-fairy:hover {
   background-color: rgba(238, 153, 172, 0.4);
 }
 
-.types__item-bug {
+.types__item-bug,
+.selectors__item-bug:hover {
   background-color: rgba(168, 184, 32, 0.4);
 }
 
-.types__item-poison {
+.types__item-poison,
+.selectors__item-poison:hover {
   background-color: rgba(160, 64, 160, 0.4);
 }
 
-.types__item-dragon {
+.types__item-dragon,
+.selectors__item-dragon:hover {
   background-color: rgba(112, 56, 248, 0.4);
 }
 
-.types__item-psychic {
+.types__item-psychic,
+.selectors__item-psychic:hover {
   background-color: rgba(248, 88, 136, 0.4);
 }
 
-.types__item-fighting {
+.types__item-fighting,
+.selectors__item-fighting:hover {
   background-color: rgba(192, 48, 40, 0.4);
 }
 
-.types__item-normal {
+.types__item-normal,
+.selectors__item-normal:hover {
   background-color: rgba(168, 168, 120, 0.4);
 }
 
-.types__item-ghost {
+.types__item-ghost,
+.selectors__item-ghost:hover {
   background-color: rgba(112, 88, 152, 0.4);
 }
 
-.types__item-steel {
+.types__item-steel,
+.selectors__item-steel:hover {
   background-color: rgba(105, 105, 105, 0.4);
 }
 
-.types__item-dark {
+.types__item-dark,
+.selectors__item-dark:hover {
   background-color: rgba(112, 88, 72, 0.4);
 }
 
-.types__item-ice {
+.types__item-ice,
+.selectors__item-ice:hover {
   background-color: rgba(152, 216, 216, 0.4);
 }

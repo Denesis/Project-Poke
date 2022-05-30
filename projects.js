@@ -4,7 +4,7 @@ const allPokemons = [];
 const parsePokemon = () => {};
 
 const getAllPokemons = async () => {
-  for (let id = 1; id <= 151; id++) {
+  for (let id = 1; id <= 20; id++) {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
     const pokeJson = await response.json();
     allPokemons.push(pokeJson);
@@ -15,13 +15,21 @@ const printPokemons = (pokemonsToPrint) => {
   const webPokeDiv = document.querySelector("#webPoke");
 
   const pokeElements = pokemonsToPrint.map((pokemon) => {
-    const pokemonContainer = document.createElement("div");
-    pokemonContainer.className = "container__card";
+    const pokeBasicInfo = document.createElement("div");
+    const pokeContainerInfo = document.createElement('div')
+    const pokeContainer = document.createElement('div')
+    pokeContainerInfo.className = 'sideBar__card'
+    pokeBasicInfo.className = "basic__card";
+    pokeContainer.className = "container__card";
     const typesPoke = pokemon.types.map(({ type }) => {
       return `<div class="types__item types__item-${type.name}">${type.name}</div>`;
     });
+    const pokeInfo = pokemon.stats.map(({base_stat,stat}) => {
+      return `<div class="stat">${stat.name} ${base_stat.url}</div>`;
+    })
+    console.log(pokeInfo);
 
-    pokemonContainer.innerHTML = `
+    pokeBasicInfo.innerHTML = `
       <div class="description__card" >
         <div class="id">${pokemon.id}</div>
         <div class="title">${pokemon.name}</div>
@@ -36,7 +44,9 @@ const printPokemons = (pokemonsToPrint) => {
         }" alt="${pokemon.name}">
       </div>
     `;
-    return pokemonContainer;
+    // pokeContainerInfo.innerHTML=
+    
+    return pokeBasicInfo;
   });
 
   webPokeDiv.append(...pokeElements);
