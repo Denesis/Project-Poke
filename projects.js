@@ -4,7 +4,7 @@ const allPokemons = [];
 const parsePokemon = () => {};
 
 const getAllPokemons = async () => {
-  for (let id = 1; id <= 20; id++) {
+  for (let id = 1; id <= 151; id++) {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
     const pokeJson = await response.json();
     allPokemons.push(pokeJson);

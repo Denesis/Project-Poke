@@ -1,11 +1,13 @@
 body {
-  background: linear-gradient(to bottom, #a31621 20%, #141115 25%, #fcf7f8 30%);
+  background: linear-gradient(to bottom, #a31621 5%, #141115 10%, #fcf7f8 15%);
   /* background-image: url(./image/pokemon-minimalism-wallpaper.png); */
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
-
+.container {
+  padding: 0 10px 0;
+}
 #logo {
   display: flex;
   justify-content: center;
@@ -25,8 +27,8 @@ body {
   margin-bottom: 20px;
   margin-top: 30px;
   height: 25px;
-  width: 250px;
-  background-color: rgba(247, 244, 239, 0.647);
+  width: 400px;
+  background-color: #a316228d;
   border-radius: 8px;
   border: none;
   text-align: center;
@@ -41,44 +43,34 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 35px;
 }
 
 .selectors__item {
+  border-radius: 12px;
   width: 60px;
   height: 15px;
+  background-color: #ed474a;
   justify-content: center;
   padding: 10px;
-  border: 2px solid black;
-  margin-right: 20px;
-  margin-bottom: 10px;
   cursor: pointer;
   display: flex;
+  box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 30%);
+  margin: 10px;
 }
 
 #webPoke {
   display: grid;
   grid-template-columns: repeat(auto-fit, 270px);
   justify-content: space-evenly;
-  gap: 15px;
+  gap: 30px;
 }
 
 .container__card {
-  /* background-color: white;
-  border-radius: 12px;
-  margin: 8px 25px 8px 8px;
-  display: flex;
-  width: 200px;
-  height: 100px;
-  align-items: center;
-  position: relative; */
-
   grid-template-columns: 1fr 1fr;
   background-color: white;
   border-radius: 12px;
-  /* margin: 8px 25px 8px 8px; */
   display: grid;
-  /* width: 200px;
-  height: 100px; */
   align-items: center;
   box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 30%);
   padding: 10px;
@@ -96,7 +88,7 @@ body {
 .img > img {
   width: 100px;
   height: 100px;
-  transform: translate(30px, -20px) scale(1.4);
+  transform: translate(12px, -22px) scale(1.4);
 }
 
 .types {
